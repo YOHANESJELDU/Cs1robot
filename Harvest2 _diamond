@@ -1,0 +1,31 @@
+from cslrobots import.
+load_world("worlds/harvest2.vld")
+jj = Robot()
+jj.set_trace("blue")
+JJ.set pause(0.2)
+
+def right():
+    for i in range(3):
+        jj.turn_left()
+
+def diamond():
+    while jj.on_beeper():
+        jj.pick_beeper ()
+    jj.move()
+    right()
+    jj.move()
+    jj.turn_left()
+
+for i in range(5):
+    jj.move()
+jj.turn left()
+jj.move()
+
+
+for i in range(3,0,-1):
+    for j in range(4):
+        for x in range(2*i-1):
+            diamond()
+        JJ.turn_left()
+    for i in range(2):
+        jj.move()
